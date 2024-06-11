@@ -1,5 +1,5 @@
 # eicrud-starter
-Starter project for Eicrud framework.
+Starter project for [Eicrud framework](https://github.com/eicrud/eicrud).
 
 `npm run start`
 
