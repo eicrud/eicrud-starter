@@ -1,7 +1,10 @@
 # eicrud-starter
 Starter project for [Eicrud framework](https://github.com/eicrud/eicrud).
 
-`npm run start`
+```
+npm install
+npm run start
+```
 
 # Database
 
