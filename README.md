@@ -31,3 +31,21 @@ export class MyConfigService extends CrudConfigService {
             dbAdapter: new PostgreDbAdapter(),
         });
 ```
+
+3. run `npm i @mikro-orm/postgresql`
+3. update your `src/app.module.ts`
+
+```typescript
+import { PostgreSqlDriver } from '@mikro-orm/postgresql';
+
+@Module({
+  imports: [
+   //...
+   MikroOrmModule.forRoot({
+    entities: [...CRUDEntities],
+    // ...
+    driver: PostgreSqlDriver,
+    user: "postgres",
+    password: "your_password_here",
+    //...
+```
