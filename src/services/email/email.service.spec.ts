@@ -3,7 +3,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { EmailService } from './email.service';
 import { EICRUDModule } from '@eicrud/core';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
-import Email from './email.entity';
+import { Email } from './email.entity';
 import { MyConfigService } from '../../eicrud.config.service';
 import { CRUD_CONFIG_KEY } from '@eicrud/core/config';
 

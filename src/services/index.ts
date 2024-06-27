@@ -1,6 +1,6 @@
-import Email from './email/email.entity';
+import { Email } from './email/email.entity';
 import { EmailService } from './email/email.service';
-import User from './user/user.entity';
+import { User } from './user/user.entity';
 import { UserService } from './user/user.service';
 
 //Auto generated file

@@ -3,7 +3,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { UserService } from './user.service';
 import { EICRUDModule } from '@eicrud/core';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
-import User from './user.entity';
+import { User } from './user.entity';
 import { MyConfigService } from '../../eicrud.config.service';
 import { CRUD_CONFIG_KEY } from '@eicrud/core/config';
 

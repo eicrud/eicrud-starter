@@ -20,8 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@eicrud/core": "^0.7.2",
-    "@eicrud/mongodb": "^0.7.2",
+    "@eicrud/core": "^0.7.6",
+    "@eicrud/mongodb": "^0.7.6",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.2.2",
     "@nestjs/core": "^10.0.0",

@@ -4,7 +4,7 @@ import { CrudEntity } from "@eicrud/core/crud";
 
 
 @Entity()
-export default class Email implements CrudEntity {
+export class Email implements CrudEntity {
 
     @PrimaryKey({ name: '_id' })
     @IsString()
