@@ -1,5 +1,5 @@
 # eicrud-starter
-Starter project for [Eicrud framework](https://github.com/eicrud/eicrud).
+Starter project for the [Eicrud framework](https://github.com/eicrud/eicrud).
 
 
 # Start the application
