@@ -1,7 +1,8 @@
 import { CrudSecurity } from "@eicrud/core/config";
 import { serviceCmds } from "./cmds";
+import { User } from "./user.entity";
 
-export function getSecurity(user: string): CrudSecurity { 
+export function getSecurity(user: string): CrudSecurity<User> { 
     return {
         rolesRights: {
             guest: {

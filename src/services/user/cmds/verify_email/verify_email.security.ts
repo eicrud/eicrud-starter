@@ -1,7 +1,8 @@
 import { CmdSecurity, baseCmds } from "@eicrud/core/config";
+import { User } from "../../user.entity";
 
 
-const getCmdSecurity = (verify_email, user): CmdSecurity => { 
+const getCmdSecurity = (verify_email, user): CmdSecurity<CmdDto, User> => { 
     return {
         minTimeBetweenCmdCallMs: 1000,
         dto: baseCmds.verifyEmail.dto,
@@ -19,3 +20,5 @@ const getCmdSecurity = (verify_email, user): CmdSecurity => {
 export const verifyEmailSecurity = {
     getCmdSecurity,
 }
+
+class CmdDto extends baseCmds.verifyEmail.dto {};

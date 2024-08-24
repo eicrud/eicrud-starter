@@ -1,7 +1,8 @@
 import { CmdSecurity, baseCmds } from "@eicrud/core/config";
+import { User } from "../../user.entity";
 
 
-const getCmdSecurity = (reset_password, user): CmdSecurity => { 
+const getCmdSecurity = (reset_password, user): CmdSecurity<CmdDto, User> => { 
     return {
         minTimeBetweenCmdCallMs: 1000,
         dto: baseCmds.resetPassword.dto,
@@ -19,3 +20,5 @@ const getCmdSecurity = (reset_password, user): CmdSecurity => {
 export const resetPasswordSecurity = {
     getCmdSecurity,
 }
+
+class CmdDto extends baseCmds.resetPassword.dto {};

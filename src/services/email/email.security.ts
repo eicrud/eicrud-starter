@@ -1,7 +1,8 @@
 import { CrudSecurity } from "@eicrud/core/config";
 import { serviceCmds } from "./cmds";
+import { Email } from "./email.entity";
 
-export function getSecurity(email: string): CrudSecurity { 
+export function getSecurity(email: string): CrudSecurity<Email> { 
     return {
         rolesRights: {
             guest: {
