@@ -6,7 +6,6 @@ import { UserService } from "./services/user/user.service";
 import { MongoDbAdapter } from '@eicrud/mongodb'
 import { roles } from "./roles";
 
-
 @Injectable()
 export class MyConfigService extends CrudConfigService {
 

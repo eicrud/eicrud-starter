@@ -1,7 +1,8 @@
 import { CmdSecurity, baseCmds } from "@eicrud/core/config";
+import { User } from "../../user.entity";
 
 
-const getCmdSecurity = (logout, user): CmdSecurity => { 
+const getCmdSecurity = (logout, user): CmdSecurity<CmdDto, User> => { 
     return {
         minTimeBetweenCmdCallMs: 1000,
         dto: baseCmds.logout.dto,
@@ -19,3 +20,5 @@ const getCmdSecurity = (logout, user): CmdSecurity => {
 export const logoutSecurity = {
     getCmdSecurity,
 }
+
+class CmdDto extends baseCmds.logout.dto {};

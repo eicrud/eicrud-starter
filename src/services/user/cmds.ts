@@ -10,7 +10,7 @@ import { sendPasswordResetEmailSecurity } from './cmds/send_password_reset_email
 import { verifyEmailSecurity } from './cmds/verify_email/verify_email.security';
 import { sendVerificationEmailSecurity } from './cmds/send_verification_email/send_verification_email.security';
 
-//Auto generated file
+//Auto generated file - do not remove
 
 export const serviceCmds =  {
     logout: logoutSecurity,
